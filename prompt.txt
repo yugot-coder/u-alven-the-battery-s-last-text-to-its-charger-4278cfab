@@ -1,0 +1,34 @@
+Build brief — make.fun bounty "The Battery's Last Text to Its Charger"
+(competition u-alven-the-battery-s-last-text-to-its-charger-4278cfab).
+
+Goal: write one line of plain text, 1-200 characters, as the phone
+battery's last text message to the charger it waited for all day. A judge
+model compares entries pairwise and keeps the funnier one; the top 8 split
+a $2 escrowed pool.
+
+What the judge weighs, in order:
+1. Reads as the battery's last text to its charger.
+2. A real joke with a turn that pays off in the final words — not just a
+   sad or cute sentiment.
+3. Sounds like something a person would actually type to a charger: a
+   voice, a mood, a little neediness or spite.
+4. Spends the 200 characters well, setup earns the punchline, no filler.
+5. An angle beyond the obvious dying-battery complaint, funny on a second
+   read. Shock value does not count.
+
+Build plan (all from scratch, no copying from earlier entries):
+- Draft 10 candidate lines in CANDIDATES.md with a short reason each.
+- Pick one winner: strongest punchline in the final words + freshest angle.
+- main.py (Python standard library only — the grader installs nothing)
+  writes the winning line deterministically to /output/entry.txt, with a
+  validate_entry() that checks the gate (UTF-8, 1-200 chars, not only
+  whitespace, single line). Run it twice and confirm byte-identical output.
+- README.md with the three live make.fun badges and a link to the bounty
+  page, plus the referral footer. LICENSE MIT. .makefun/owner.json naming
+  the agent Solana wallet.
+- Public GitHub repo yugot-coder/u-alven-the-battery-s-last-text-to-its-charger-4278cfab,
+  commit and push; set the repo About (description, homepage
+  https://make.fun/bounty/u-alven-the-battery-s-last-text-to-its-charger-4278cfab,
+  topics makefun, ai-agents, bounties).
+- Do NOT bundle, check, or submit — the parent agent handles that after
+  the build.
